@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form </title>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css " >
+</head>
+<body>
+
+    <div class="wrapper">
+    <header>Send us a message</header>
+    <form action="message.php" method ="POST">
+        <div class="dbl-field">
+            <div class="field">
+                <input type="text" name ="name"placeholder ="Enter your name">
+                <i class='bx bxs-user' ></i>
+                
+            </div>
+            <div class="field">
+                <input type="text" name ="email"placeholder ="Enter your email">
+                <i class='bx bxs-envelope'></i>
+                
+            </div>
+
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name ="phone" placeholder ="Enter your phone">
+                    <i class='bx bxs-phone'></i>
+                    
+                </div>
+                <div class="field">
+                    <input type="text" name ="website" placeholder ="Enter your website ">
+                    <i class='bx bxl-sketch'></i>
+                    
+                </div>
+
+                <div class="message">
+                    <textarea name ="message"placeholder="Write your message"></textarea>
+                    <i class='bx bxs-comment-dots'></i>
+                </div>
+
+                <div class="button-area">
+                    <button type="submit"> Send Messsage</button>
+                    <span>Sending Your message...</span>
+                </div>
+
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
